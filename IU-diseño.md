@@ -10,6 +10,7 @@ Logo DateVenture :
 Permite a las parejas crear perfiles individuales y vincularse como pareja en la aplicación. Esto ayudará a personalizar las recomendaciones según los intereses y presupuestos compartidos.
 ### 1. Inicio
 El usuario introduce los datos necesarios al utilizar la aplicación por primera vez, así como también visualiza la interfaz una vez que esté registrado en la misma.
+
 <img src="Docs/Images/Pagina-Login.png" alt="Pagina-Login" width="300/>
 
 <img src="Docs/Images/pagina-VistaInicial-DateVenture.png" alt="pagina-VistaInicial-DateVenture" width="300/>
