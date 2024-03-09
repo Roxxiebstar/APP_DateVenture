@@ -1,4 +1,4 @@
-# DISEÑO INTERFAZ DE USUARIO
+# Diseño interfaz de usuario
 El diseño de interfaz de usuario - DateVenture fue creado desde cero siguiendo algunos patrones parecidos
 a los de una aplicacion de planificación de citas.
 
