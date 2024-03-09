@@ -32,34 +32,26 @@ El usuario podrá vincularse por medio del nombre o apodo de usuario de la parej
 
 El usuario empieza a crear su cita soñada, empezando con sus preferencia de lugares, como verán a continuación:
 
-<img src="Docs/Images/Página-inicioDateVenture.png" alt="Pagina-Perfil-inicio" width="300"/>
+<img src="Docs/Images/Página-inicioDateVenture.png" alt="Pagina-Perfil-inicio" width="300" />
 
 ## 5. Ingresamos a las categorías propuesta
 
 ### 5.1 Categoría restaurants
 El usuario podrá elegir diferentes tipos de comida segun su preferencia.
 
-<img src="Docs/Images/Páginas-Restaurants-Categoría.png" alt="Páginas-Restaurants-Categoría" width="300"/>
+<img src="Docs/Images/Páginas-Restaurants-Categoría.png" alt="Páginas-Restaurants-Categoría" width="300" />
 
 ### 5.2 Categoría Travel 
 El usuario podrá seleccionar paises de su preferencia o solo Colombia.
 
-<img src="Docs/Images/Página-Travel-Categoría.png" alt="Página-Travel-Categoría" width="300"/>
+<img src="Docs/Images/Página-Travel-Categoría.png" alt="Página-Travel-Categoría" width="300" />
 
 ### 5.3 Categoría home 
 El usuario podrá seleccionar que prefiere hacer cuando esta en casa.
 
-<img src="Docs/Images/Página-Home-Categoría.png" alt="Página-Travel-Categoría" width="300"/>
+<img src="Docs/Images/Página-Home-Categoría.png" alt="Página-Travel-Categoría" width="300" />
 
 ### 5.4 Categoría Green Spaces
 El usuario podrá selecciona lugares que llamen su atención al aire libre.
 
-<img src="Docs/Images/Página-GreenPlaces-Categoría.png" alt="Página-Travel-Categoría" width="300"/>
-
-
-
-
-
-
-
-##
+<img src="Docs/Images/Página-GreenPlaces-Categoría.png" alt="Página-Travel-Categoría" width="300" />
