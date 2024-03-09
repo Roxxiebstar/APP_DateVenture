@@ -13,6 +13,8 @@ El usuario introduce los datos necesarios al utilizar la aplicación por primera
 
 <img src="Docs/Images/Pagina-Login.png" alt="Pagina-Login" width="300/>
 
+Interfaz una vez registrad@
+
 <img src="Docs/Images/pagina-VistaInicial-DateVenture.png" alt="pagina-VistaInicial-DateVenture" width="300/>
 
 
