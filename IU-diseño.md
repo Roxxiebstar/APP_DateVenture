@@ -26,13 +26,13 @@ El usuario puede ver el inicio de su aplicacion, donde podra planificar sus cita
 ## 3. Vinculación con tú pareja
 El usuario podrá vincularse por medio del nombre o apodo de usuario de la pareja. 
 
-<img src="Docs/Images/Pagina-Vinculación-DateVenture.png"alt="Pagina-Perfil-inicio" width="300" />
+<img src="Docs/Images/Pagina-Vinculación-DateVenture.png" alt="Pagina-Perfil-inicio" width="300" />
 
 ## 4. Filtro de preguntas acerca de ti y tus gustos
 
 El usuario empieza a crear su cita soñada, empezando con sus preferencia de lugares, como verán a continuación:
 
-<img src="Docs/Images/Página-inicioDateVenture.png" alt="Pagina-Perfil-inicio" width="300" />
+<img src="Docs/Images/Página-InicioDateVenture.png" alt="Pagina-Perfil-inicio" width="300" />
 
 ## 5. Ingresamos a las categorías propuesta
 
