@@ -7,6 +7,10 @@ android {
     namespace = "com.example.dateventure"
     compileSdk = 34
 
+buildFeatures{
+    viewBinding = true
+}
+
     defaultConfig {
         applicationId = "com.example.dateventure"
         minSdk = 28
