@@ -9,7 +9,6 @@
     android:contentDescription="imagenParFondo"
     tools:context=".MainActivity">
 
-
     <ImageView
         android:id="@+id/acuarela1arriba"
         android:layout_width="500dp"
@@ -17,7 +16,7 @@
         android:layout_marginTop="4dp"
         android:src="@mipmap/acuarelaimage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,12 +35,13 @@
 
     <ImageView
         android:id="@+id/birdsenamorados"
-        android:layout_width="111dp"
-        android:layout_height="168dp"
+        android:layout_width="91dp"
+        android:layout_height="114dp"
         app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
         app:srcCompat="@mipmap/birdsenamorados" />
 
     <ImageView
@@ -51,6 +51,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/iconperfil" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="344dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/birdsenamorados"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logoventure" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="298dp"
+        android:layout_height="75dp"
+        android:fontFamily="serif"
+        android:text="Plan your romantic date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acuarela1arriba" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
