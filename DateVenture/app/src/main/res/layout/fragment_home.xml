@@ -23,11 +23,22 @@
         app:layout_constraintVertical_bias="0.437" />
 
     <ImageView
+        android:id="@+id/acuarela"
+        android:layout_width="494dp"
+        android:layout_height="424dp"
+        android:src="@drawable/acuarela_dateventure"
+        android:contentDescription="@string/acuarela"
+        app:layout_constraintBottom_toBottomOf="@+id/banner_adventure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/banner_adventure"
         android:layout_width="330dp"
         android:layout_height="201dp"
-        android:contentDescription="@string/start_banner"
-        android:src="@drawable/adventure_waits"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo_dateventure"
         app:layout_constraintBottom_toTopOf="@+id/text_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
