@@ -46,7 +46,11 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
      fun planearCita(view : View) { //se ha creado esta funcion del boton questionario, para que pueda ir de fragment_home a questionarioxml
-        val intent=Intent(this, questionario::class.java).apply {}
+        val intent=Intent(this, Cuestionario::class.java).apply {}
+        startActivity(intent)
+    }
+    fun preferenciaRestaurant(view : View) { //se ha creado esta funcion del boton questionario, para que pueda ir de fragment_home a questionarioxml
+        val intent= Intent(this, RestaurantsHoj::class.java).apply {}
         startActivity(intent)
     }
 

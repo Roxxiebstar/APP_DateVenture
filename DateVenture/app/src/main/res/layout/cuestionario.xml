@@ -102,6 +102,7 @@
         android:layout_width="132dp"
         android:layout_height="52dp"
         android:layout_marginStart="28dp"
+        android:onClick="preferenciaRestaurant"
         android:background="@color/amarillo_personalizado"
         android:text="@string/btn_restaurants"
         app:layout_constraintBottom_toTopOf="@+id/butnHome"
