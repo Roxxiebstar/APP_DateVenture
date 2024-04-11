@@ -111,6 +111,7 @@
         android:layout_height="59dp"
         android:background="@color/amarillo_personalizado"
         android:text="@string/btn_crea_cita"
+        android:onClick="planearCita"
         android:textStyle="bold|italic"
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
