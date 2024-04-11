@@ -11,4 +11,22 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="imagenParaParteDefondo">imagen de fondo</string>
+    <string name="imagen_acuarela">imagen de acuarela roja</string>
+    <string name="imagen_acuarela2">imagen de acuarela roja 2</string>
+    <string name="imagen_fondo_desc">Es acuarela y tiene color rojo</string>
+    <string name="icon_del_perfil">Es un icono que contiene la foto del usuario</string>
+    <string name="logo_de_dateadventure">Es un logo que contiene el nombre dateadventure y un eslogan que dice"donde cada cita es una aventura inolvidable</string>
+    <string name="icon_conectar_pareja">icono de conectarse o entrelazar cuentas</string>
+    <string name="images_citas">Imagen que contiene algunas emocionantes citas que podrías tener</string>
+    <string name="image_mapa_animado">Contiene un mapa animado</string>
+    <string name="image_cartel">Contiene un cartel que dice "lets go adventure</string>
+    <string name="bond_with_your_partner">Bond with your partner</string>
+    <string name="btn_crea_cita">plan your romantic date</string>
+    <string name="username">Su nombre</string>
+    <string name="hi_welcome">HI, WELCOME</string>
+
+
+
+
+
 </resources>
