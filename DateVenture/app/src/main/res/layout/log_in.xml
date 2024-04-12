@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/arena"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.login.LogIn">
 
     <TextView
-        android:id="@+id/Adventure_Waits"
+        android:id="@+id/Adventure_Starts"
         android:layout_width="344dp"
         android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/adventure_waits"
+        android:text="@string/adventure_starts"
         android:textAlignment="center"
         android:textColor="@color/arena_text"
         android:textSize="35sp"
@@ -24,50 +25,35 @@
 
     <ImageView
         android:id="@+id/acuarela"
-        android:layout_width="557dp"
-        android:layout_height="491dp"
+        android:layout_width="409dp"
+        android:layout_height="281dp"
         android:contentDescription="@string/acuarela"
+        android:scaleType="centerCrop"
         android:src="@drawable/acuarela_dateventure"
         app:layout_constraintBottom_toBottomOf="@+id/banner_adventure"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/banner_adventure"
         android:layout_width="330dp"
         android:layout_height="201dp"
         android:contentDescription="@string/logo"
-        android:src="@drawable/logo_dateventure"
-        app:layout_constraintBottom_toTopOf="@+id/Adventure_Waits"
+        android:src="@mipmap/logo_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/Adventure_Starts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="32dp"
-        android:autofillHints="name"
-        android:ems="20"
-        android:hint="@string/name_register"
-        android:inputType="text"
-        android:textColorHint="@color/arena_text"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Adventure_Waits" />
 
     <EditText
         android:id="@+id/editTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="32dp"
         android:autofillHints="emailAddress"
         android:ems="20"
@@ -77,23 +63,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:autofillHints="phone"
-        android:ems="20"
-        android:hint="@string/phone_register"
-        android:inputType="phone"
-        android:textColorHint="@color/arena_text"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@id/Adventure_Starts" />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -109,23 +79,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
-
-    <EditText
-        android:id="@+id/editTextRePassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:autofillHints="password"
-        android:ems="20"
-        android:hint="@string/Re_password_register"
-        android:inputType="textPassword"
-        android:textColorHint="@color/arena_text"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
 
     <Button
         android:id="@+id/register_button"
@@ -134,12 +88,12 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/button_rounded"
+        android:background="@drawable/button_rounded_out"
         android:text="@string/button_signin"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRePassword" />
+        app:layout_constraintTop_toBottomOf="@+id/logIn_button" />
 
     <Button
         android:id="@+id/logIn_button"
@@ -148,11 +102,44 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/button_rounded_out"
+        android:background="@drawable/button_rounded"
         android:text="@string/button_login"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_button" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/register_button"
+        app:srcCompat="@drawable/google_logo"
+        android:background="@drawable/social_button"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_button"
+        app:srcCompat="@drawable/facebook_logo"
+        android:background="@drawable/social_button"/>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/register_button"
+        app:srcCompat="@drawable/microsoft_logo"
+        android:background="@drawable/social_button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

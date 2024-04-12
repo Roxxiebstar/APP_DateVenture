@@ -11,6 +11,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="adventure_waits">ADVENTURE WAITS</string>
+    <string name="adventure_starts">ADVENTURE STARTS</string>
     <string name="name_register">Name</string>
     <string name="email_register">Email</string>
     <string name="phone_register">Phone number</string>
@@ -21,7 +22,7 @@
     <string name="acuarela">Acuarela_DateVenture</string>
 
 
-    <string name="button_register">Register</string>
+    <string name="button_signin">Sign In</string>
     <string name="button_login">Log In</string>
 
 </resources>
