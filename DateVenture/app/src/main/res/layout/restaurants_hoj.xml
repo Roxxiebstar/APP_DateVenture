@@ -11,13 +11,13 @@
 
     <ImageView
         android:id="@+id/acuarela1arriba"
-        android:layout_width="500dp"
-        android:layout_height="wrap_content"
+        android:layout_width="402dp"
+        android:layout_height="270dp"
         android:layout_marginTop="4dp"
         android:contentDescription="@string/imagen_acuarela"
-        android:src="@mipmap/acuarelaimage"
+        android:src="@drawable/acuarelaimage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,7 +26,7 @@
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/imagen_acuarela2"
-        android:src="@mipmap/acuarelaimage"
+        android:src="@drawable/acuarelaimage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,18 +46,18 @@
         app:layout_constraintVertical_bias="0.097"
         app:srcCompat="@mipmap/logodateadventure" />
 
+
     <ImageView
         android:id="@+id/imageComida"
         android:layout_width="402dp"
         android:layout_height="769dp"
         app:layout_constraintBottom_toBottomOf="@+id/acuarela2abajo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.496"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@mipmap/comidasimages" />
-
 
     <TextView
         android:id="@+id/textView2"
