@@ -12,29 +12,29 @@
 
     <ImageView
         android:id="@+id/acuarela1arriba"
-        android:layout_width="500dp"
-        android:layout_height="wrap_content"
+        android:layout_width="416dp"
+        android:layout_height="234dp"
         android:layout_marginTop="4dp"
-        android:src="@mipmap/acuarelaimage"
+        android:contentDescription="@string/imagen_acuarela"
+        android:src="@drawable/acuarelaimage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.348"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/imagen_acuarela"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/acuarela2abajo"
-        android:layout_width="500dp"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/acuarelaimage"
+        android:layout_width="417dp"
+        android:layout_height="236dp"
+        android:contentDescription="@string/imagen_acuarela2"
+        android:src="@drawable/acuarelaimage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/acuarela1arriba"
         app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintVertical_weight="0.606"
-        android:contentDescription="@string/imagen_acuarela2"/>
+        app:layout_constraintVertical_weight="0.606" />
 
     <ImageView
         android:id="@+id/iconPerfil"
@@ -63,36 +63,37 @@
         android:id="@+id/logoDateVenture"
         android:layout_width="154dp"
         android:layout_height="162dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="312dp"
+        android:contentDescription="@string/logo_de_dateadventure"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/letsadventure"
-        android:contentDescription="@string/logo_de_dateadventure"/>
+        app:srcCompat="@mipmap/letsadventure" />
 
     <ImageView
         android:id="@+id/imagesCitas"
         android:layout_width="315dp"
         android:layout_height="168dp"
+        android:contentDescription="@string/images_citas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPlaneaCita"
-        app:srcCompat="@mipmap/cosasparahacer"
-        android:contentDescription="@string/images_citas"/>
+        app:srcCompat="@mipmap/cosasparahacer" />
 
     <ImageView
         android:id="@+id/imagemap"
         android:layout_width="167dp"
         android:layout_height="344dp"
+        android:contentDescription="@string/image_mapa_animado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.534"
-        app:srcCompat="@mipmap/mapitaicono"
-        android:contentDescription="@string/image_mapa_animado"/>
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@mipmap/mapitaicono" />
+
     <ImageView
         android:id="@+id/logoDateAdventure"
         android:layout_width="258dp"
@@ -109,13 +110,13 @@
         android:id="@+id/btnPlaneaCita"
         android:layout_width="269dp"
         android:layout_height="59dp"
+        android:layout_marginTop="8dp"
         android:background="@color/amarillo_personalizado"
-        android:text="@string/btn_crea_cita"
         android:onClick="planearCita"
+        android:text="@string/btn_crea_cita"
         android:textStyle="bold|italic"
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acuarela1arriba" />
 
@@ -123,7 +124,7 @@
         android:id="@+id/btnConectaPareja"
         android:layout_width="269dp"
         android:layout_height="59dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="260dp"
         android:background="@color/amarillo_personalizado"
         android:text="@string/btn_bond_with_your_partner"
         android:textStyle="bold|italic"
@@ -131,6 +132,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acuarela1arriba" />
+
     <TextView
         android:id="@+id/UsernameNombreUsario"
         android:layout_width="wrap_content"

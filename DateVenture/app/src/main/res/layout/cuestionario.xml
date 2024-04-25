@@ -11,25 +11,25 @@
 
     <ImageView
         android:id="@+id/acuarela1arriba"
-        android:layout_width="426dp"
-        android:layout_height="261dp"
+        android:layout_width="416dp"
+        android:layout_height="231dp"
         android:layout_marginTop="4dp"
         android:contentDescription="@string/imagen_acuarela"
         android:src="@drawable/acuarelaimage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/acuarela2abajo"
-        android:layout_width="408dp"
-        android:layout_height="321dp"
+        android:layout_width="413dp"
+        android:layout_height="242dp"
         android:contentDescription="@string/imagen_acuarela2"
         android:src="@drawable/acuarelaimage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/acuarela1arriba"
         app:layout_constraintVertical_bias="1.0"
@@ -97,7 +97,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597"
+        app:layout_constraintVertical_bias="0.555"
         app:srcCompat="@mipmap/cosasparahacer" />
 
     <Button
@@ -117,11 +117,11 @@
         android:id="@+id/btnTravel"
         android:layout_width="135dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:background="@color/amarillo_personalizado"
         android:text="@string/btnTravel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintStart_toEndOf="@+id/btnRestaurants"
         app:layout_constraintTop_toBottomOf="@+id/imagenCitas2" />
 
@@ -147,7 +147,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTravel"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintVertical_bias="0.272" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
