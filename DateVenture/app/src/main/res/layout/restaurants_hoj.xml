@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.027"
-        app:srcCompat="@mipmap/logodateadventure" />
+        app:srcCompat="@drawable/logodateadventure" />
 
     <ImageView
         android:id="@+id/imageComida"
@@ -58,7 +58,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.493"
-        app:srcCompat="@mipmap/comidasimages" />
+        app:srcCompat="@drawable/comidasimages" />
 
     <TextView
         android:id="@+id/textView2"

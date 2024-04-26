@@ -43,7 +43,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/iconperfil"
+        app:srcCompat="@drawable/iconperfil"
         android:contentDescription="@string/icon_del_perfil" />
 
 
@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/conectarpareja"
+        app:srcCompat="@drawable/conectarpareja"
         android:contentDescription="@string/icon_conectar_pareja"/>
 
     <ImageView
@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPlaneaCita"
-        app:srcCompat="@mipmap/cosasparahacer" />
+        app:srcCompat="@drawable/cosasparahacer" />
 
     <ImageView
         android:id="@+id/imagemap"
@@ -92,14 +92,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.498"
-        app:srcCompat="@mipmap/mapitaicono" />
+        app:srcCompat="@drawable/mapitaicono" />
 
     <ImageView
         android:id="@+id/logoDateAdventure"
         android:layout_width="258dp"
         android:layout_height="216dp"
         android:layout_marginTop="4dp"
-        android:src="@mipmap/logodateadventure"
+        android:src="@drawable/logodateadventure"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
