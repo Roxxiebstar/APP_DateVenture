@@ -28,9 +28,14 @@
     <string name="prefer_date">WHAT DO YOU PREFER FOR YOUR DATE?</string>
     <string name="btn_restaurants">RESTAURANTS</string>
     <string name="btnTravel">TRAVEL</string>
+    <string name="viaje"></string>
     <string name="btn_home">HOME</string>
     <string name="btn_green_spaces">GREEN SPACES</string>
     <string name="images_citas2">Imagen con hobbies</string>
+    <string name="food_preference">FOOD PREFERENCES</string>
+    <string name="food_image">Imagen que contiene diferentes tipos de comida</string>
+    <string name="btn_restaurants_description">Boton para dirigirse a gustos de comida</string>
+
 
 
 

@@ -38,6 +38,7 @@
 
     <ImageView
         android:id="@+id/logoDateVenture"
+        android:contentDescription="@string/logo_de_dateadventure"
         android:layout_width="212dp"
         android:layout_height="188dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,8 +51,9 @@
 
     <ImageView
         android:id="@+id/imageComida"
-        android:layout_width="407dp"
-        android:layout_height="262dp"
+        android:contentDescription="@string/food_image"
+        android:layout_width="407sp"
+        android:layout_height="262sp"
         app:layout_constraintBottom_toBottomOf="@+id/acuarela2abajo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
@@ -62,10 +64,10 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="240dp"
-        android:layout_height="126dp"
+        android:layout_width="240sp"
+        android:layout_height="126sp"
         android:text="FOOD PREFERENCES"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
         app:layout_constraintEnd_toEndOf="parent"
