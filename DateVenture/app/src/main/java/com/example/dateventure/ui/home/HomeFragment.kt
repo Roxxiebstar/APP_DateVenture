@@ -1,12 +1,16 @@
 package com.example.dateventure.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.dateventure.R
+import com.example.dateventure.Restaurante
 import com.example.dateventure.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -27,7 +31,6 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         return root
     }
 
