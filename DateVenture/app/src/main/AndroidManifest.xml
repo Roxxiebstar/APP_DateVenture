@@ -13,12 +13,18 @@
         android:theme="@style/Theme.DateVenture"
         tools:targetApi="31">
         <activity
+            android:name=".Restaurante"
+            android:exported="false" />
+        <activity
+            android:name=".Cuestionario"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.DateVenture.NoActionBar">
-        </activity>
-        <activity android:name=".LogIn"
+            android:theme="@style/Theme.DateVenture.NoActionBar" />
+        <activity
+            android:name=".LogIn"
             android:exported="true"
             android:theme="@style/Theme.DateVenture.NoActionBar">
             <intent-filter>
@@ -27,11 +33,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignIn"
+        <activity
+            android:name=".SignIn"
             android:exported="true"
             android:label="signin"
-            android:theme="@style/Theme.DateVenture.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.DateVenture.NoActionBar" />
     </application>
 
 </manifest>
