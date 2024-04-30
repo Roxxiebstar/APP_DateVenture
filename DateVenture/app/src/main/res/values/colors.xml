@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="arena">#FCECCC</color>
     <color name="arena_text">#8C764C</color>
+    <color name="amarillo_personalizado">#FFFF00</color>
 </resources>
