@@ -3,8 +3,74 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/arena"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Restaurante">
+
+    <ImageView
+        android:id="@+id/acuarela1arriba"
+        android:layout_width="415dp"
+        android:layout_height="233dp"
+        android:contentDescription="@string/imagen_acuarela"
+        android:src="@drawable/acuarela_dateventure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/acuarela2abajo"
+        android:layout_width="413dp"
+        android:layout_height="237dp"
+        android:contentDescription="@string/imagen_acuarela2"
+        android:src="@drawable/acuarela_dateventure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/acuarela1arriba"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_weight="0.606" />
+
+
+    <ImageView
+        android:id="@+id/logoDateVenture"
+        android:layout_width="212dp"
+        android:layout_height="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@mipmap/logo_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/imageComida"
+        android:layout_width="306dp"
+        android:layout_height="307dp"
+        app:layout_constraintBottom_toBottomOf="@+id/acuarela2abajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"
+        app:srcCompat="@drawable/comidasimages" />
+
+    <TextView
+        android:id="@+id/textFoodPreference"
+        android:layout_width="271dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="128dp"
+        android:text="FOOD PREFERENCES"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
