@@ -38,6 +38,7 @@
         android:id="@+id/logoDateVenture"
         android:layout_width="212dp"
         android:layout_height="188dp"
+        android:contentDescription="@string/acuarela"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -51,6 +52,7 @@
         android:layout_width="306dp"
         android:layout_height="307dp"
         app:layout_constraintBottom_toBottomOf="@+id/acuarela2abajo"
+        android:contentDescription="@string/image_food"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,14 +65,79 @@
         android:layout_width="271dp"
         android:layout_height="94dp"
         android:layout_marginStart="128dp"
-        android:text="FOOD PREFERENCES"
+        android:text="@string/food_preferences"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.683" />
+
+
+    <CheckBox
+        android:id="@+id/brazilianFood"
+        android:layout_width="203dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="180dp"
+        android:text="@string/brazilian_preference"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/italianFood"
+        android:layout_width="147dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="124dp"
+        android:text="@string/italian_preference"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/fastFood"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="132dp"
+        android:text="@string/fast_food_preference"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/colombianFood"
+        android:layout_width="226dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="172dp"
+        android:text="@string/Colombian_preference"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/othersFood"
+        android:layout_width="197dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/Other_preference"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
