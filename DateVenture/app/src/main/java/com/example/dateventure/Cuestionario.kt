@@ -18,16 +18,5 @@ class Cuestionario : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-            val btnRestaurante: Button = findViewById(R.id.btnRestaurants)
-            btnRestaurante.setOnClickListener {
-                val intent: Intent = Intent(this, MainActivity:: class.java)
-                startActivity(intent)
-            }
-
-            val btn: Button = findViewById(R.id.)
-            btn.setOnClickListener {
-                val intent: Intent = Intent(this, SignIn:: class.java)
-                startActivity(intent)
-            }
-        }
     }
+}
