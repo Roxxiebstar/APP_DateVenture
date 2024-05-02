@@ -27,7 +27,6 @@
         android:src="@drawable/acuarela_dateventure"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/acuarela1arriba"
         app:layout_constraintVertical_bias="1.0"
@@ -101,46 +100,46 @@
 
     <Button
         android:id="@+id/btnRestaurants"
-        android:layout_width="154dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
         android:text="@string/btn_restaurants"
-        app:layout_constraintBottom_toTopOf="@+id/butnHome"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenCitas2"
-        app:layout_constraintVertical_bias="0.451" />
-
-    <Button
-        android:id="@+id/btnTravel"
-        android:layout_width="135dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/btnTravel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.655"
-        app:layout_constraintStart_toEndOf="@+id/btnRestaurants"
         app:layout_constraintTop_toBottomOf="@+id/imagenCitas2" />
 
     <Button
-        android:id="@+id/butnHome"
-        android:layout_width="152dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="44dp"
+        android:id="@+id/btnTravel"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/btnTravel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenCitas2" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/button_rounded"
         android:text="@string/btn_home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnGreenPlaces"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRestaurants" />
 
     <Button
         android:id="@+id/btnGreenPlaces"
-        android:layout_width="137dp"
-        android:layout_height="52dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="155dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/button_rounded"
         android:text="@string/btn_green_spaces"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTravel"
-        app:layout_constraintVertical_bias="0.313" />
+        app:layout_constraintTop_toBottomOf="@+id/btnTravel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
