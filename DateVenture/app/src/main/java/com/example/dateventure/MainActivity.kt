@@ -46,9 +46,14 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        val btn: Button = findViewById(R.id.btnPlaneaCita)
-        btn.setOnClickListener {
+        val btnPlan: Button = findViewById(R.id.btnPlaneaCita)
+        btnPlan.setOnClickListener {
             val intent: Intent = Intent(this, Cuestionario:: class.java)
+            startActivity(intent)
+        }
+        val btnConnet: Button = findViewById(R.id.btnConectaPareja)
+        btnConnet.setOnClickListener {
+            val intent: Intent = Intent(this, ConnectYourDate:: class.java)
             startActivity(intent)
         }
     }
