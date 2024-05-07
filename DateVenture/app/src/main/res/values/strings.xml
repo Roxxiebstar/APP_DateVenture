@@ -67,4 +67,20 @@
     <string name="image_travel">imagen de mapa de colombia</string>
 
 
+    <string name="desc_home">HOME</string>
+    <string name="show">TV SHOWS</string>
+    <string name="craft">CRAFTS</string>
+    <string name="cook">COOK</string>
+    <string name="Games">VIDEO GAMES</string>
+
+
+    <string name="desc_green">GREEN PLACES</string>
+    <string name="eat">EAT</string>
+    <string name="extreme">EXTREME SPORTS</string>
+    <string name="camp">TO CAMP</string>
+    <string name="bike">BIKE RIDE</string>
+    <string name="image_green">Imagen de dos personas al aire libre:)</string>
+
+
+
 </resources>
