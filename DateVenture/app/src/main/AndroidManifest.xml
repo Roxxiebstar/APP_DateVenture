@@ -13,6 +13,9 @@
         android:theme="@style/Theme.DateVenture"
         tools:targetApi="31">
         <activity
+            android:name=".Travel"
+            android:exported="false" />
+        <activity
             android:name=".Restaurante"
             android:exported="false" />
         <activity
