@@ -18,5 +18,32 @@ class Cuestionario : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btnRestaurant: Button = findViewById(R.id.btnRestaurants)
+        btnRestaurant.setOnClickListener {
+            val intent: Intent = Intent(this, Restaurante:: class.java)
+            startActivity(intent)
+        }
+
+        val btnTravel: Button = findViewById(R.id.btnTravel)
+        btnTravel.setOnClickListener {
+            val intent: Intent = Intent(this, Restaurante:: class.java)
+           //Cambiar "Restaurante" por "Travel"                aqui
+            startActivity(intent)
+        }
+
+        val btnHome: Button = findViewById(R.id.btnHome)
+        btnHome.setOnClickListener {
+            val intent: Intent = Intent(this, Restaurante:: class.java)
+            //Cambiar "Restaurante" por "Home"                aqui
+            startActivity(intent)
+        }
+
+        val btnGreen: Button = findViewById(R.id.btnGreenPlaces)
+        btnGreen.setOnClickListener {
+            val intent: Intent = Intent(this, Restaurante:: class.java)
+            //Cambiar "Restaurante" por "GreenPlaces"                aqui
+            startActivity(intent)
+        }
     }
 }
