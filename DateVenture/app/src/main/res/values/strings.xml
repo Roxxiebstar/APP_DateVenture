@@ -22,6 +22,7 @@
     <string name="acuarela">Acuarela_DateVenture</string>
 
 
+
     <string name="button_signin">Sign In</string>
     <string name="button_login">Log In</string>
 
@@ -58,6 +59,14 @@
     <string name="italian_preference">Italian</string>
     <string name="fast_food_preference">Fast Food</string>
     <string name="Other_preference">Others</string>
+
+    <string name="Travel_preferences">TRAVEL PREFERENCES</string>
+    <string name="italia_check">ITALIA</string>
+    <string name="brasil_check">BRASIL</string>
+    <string name="mexico_check">MEXICO</string>
+    <string name="argentina_check">ARGENTINA</string>
+    <string name="image_travel">imagen de mapa de colombia</string>
+
 
 
 </resources>
