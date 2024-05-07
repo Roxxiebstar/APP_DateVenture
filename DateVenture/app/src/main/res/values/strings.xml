@@ -29,6 +29,7 @@
     <string name="imagen_acuarela">imagen de acuarela roja</string>
     <string name="imagen_acuarela2">imagen de acuarela roja 2</string>
     <string name="imagen_fondo_desc">Es acuarela y tiene color rojo</string>
+
     <string name="icon_del_perfil">Es un icono que contiene la foto del usuario</string>
     <string name="logo_de_dateadventure">Es un logo que contiene el nombre dateadventure y un eslogan que dice"donde cada cita es una aventura inolvidable</string>
     <string name="icon_conectar_pareja">icono de conectarse o entrelazar cuentas</string>
@@ -39,6 +40,7 @@
     <string name="btn_crea_cita">plan your romantic date</string>
     <string name="username">NOMBRE USUARIO</string>
     <string name="hi_welcome">HI, WELCOME</string>
+
     <string name="complete_questions">COMPLETE THE QUESTIONS FOR THE DAY OF YOUR DREAMS</string>
     <string name="What_hobbies">WHAT ARE YOUR HOBBIES?</string>
     <string name="prefer_date">WHAT DO YOU PREFER FOR YOUR DATE?</string>
@@ -47,7 +49,15 @@
     <string name="btn_home">HOME</string>
     <string name="btn_green_spaces">GREEN SPACES</string>
     <string name="images_citas2">Imagen con hobbies</string>
-    <string name="brazilian">Brazilian</string>
+
+
+    <string name="food_preferences">FOOD PREFERENCES</string>
+    <string name="brazilian_preference">Brazilian</string>
+    <string name="Colombian_preference">Colombian</string>
+    <string name="image_food">Imagen con hobbies</string>
+    <string name="italian_preference">Italian</string>
+    <string name="fast_food_preference">Fast Food</string>
+    <string name="Other_preference">Others</string>
 
 
 </resources>
