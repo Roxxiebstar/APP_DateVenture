@@ -22,7 +22,6 @@
     <string name="acuarela">Acuarela_DateVenture</string>
 
 
-
     <string name="button_signin">Sign In</string>
     <string name="button_login">Log In</string>
 
@@ -66,7 +65,6 @@
     <string name="mexico_check">MEXICO</string>
     <string name="argentina_check">ARGENTINA</string>
     <string name="image_travel">imagen de mapa de colombia</string>
-
 
 
 </resources>
