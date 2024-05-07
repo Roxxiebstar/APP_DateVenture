@@ -82,5 +82,10 @@
     <string name="image_green">Imagen de dos personas al aire libre:)</string>
 
 
+    <string name="desc_connect">CONNECT WITH YOUR DATE</string>
+    <string name="image_date">Contiene imagen para entrelazar parejas</string>
+    <string name="text_put">PUT THE USERNAME</string>
+    <string name="write_username">search Username</string>
+    <string name="btn_buscar_username">search username</string>
 
 </resources>
