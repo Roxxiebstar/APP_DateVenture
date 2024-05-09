@@ -2,46 +2,32 @@ package com.example.dateventure
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
 import android.widget.Button
-import com.google.android.material.navigation.NavigationView
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.dateventure.databinding.ActivityMainBinding
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        setSupportActionBar(binding.appBarMain.toolbar)
-
-        val drawerLayout: DrawerLayout = binding.drawerLayout
-        val navView: NavigationView = binding.navView
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
         val btnPlan: Button = findViewById(R.id.btnPlaneaCita)
         btnPlan.setOnClickListener {
-            val intent: Intent = Intent(this, Cuestionario:: class.java)
+            val intent = Intent(this, Cuestionario:: class.java)
             startActivity(intent)
         }
+
         val btnConnet: Button = findViewById(R.id.btnConectaPareja)
         btnConnet.setOnClickListener {
-            val intent: Intent = Intent(this, ConnectYourDate:: class.java)
+            val intent = Intent(this, ConnectYourDate:: class.java)
             startActivity(intent)
         }
     }
-
 }

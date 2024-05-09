@@ -19,101 +19,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/acuarela2abajo"
-        android:layout_width="413dp"
-        android:layout_height="237dp"
-        android:contentDescription="@string/imagen_acuarela2"
-        android:src="@drawable/acuarela_dateventure"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/acuarela1arriba"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintVertical_weight="0.606" />
-
 
     <ImageView
         android:id="@+id/imageComida"
-        android:layout_width="306dp"
-        android:layout_height="307dp"
-        app:layout_constraintBottom_toBottomOf="@+id/acuarela2abajo"
+        android:layout_width="166dp"
+        android:layout_height="162dp"
         android:contentDescription="@string/image_food"
+        app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529"
+        app:layout_constraintTop_toTopOf="@+id/acuarela1arriba"
         app:srcCompat="@drawable/comidasimages" />
-
 
     <TextView
         android:id="@+id/textFoodPreference"
-        android:layout_width="300dp"
+        android:layout_width="200dp"
         android:layout_height="100dp"
         android:text="@string/food_preferences"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageComida"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/brazilianFood"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginBottom="80dp"
-        android:text="@string/brazilian_preference"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/acuarela2abajo" />
+        app:layout_constraintTop_toBottomOf="@+id/acuarela1arriba">
 
-    <CheckBox
-        android:id="@+id/italianFood"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="200dp"
-        android:text="@string/italian_preference"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/brazilianFood" />
+        <ListView
+            android:id="@+id/foodPreferencesListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:choiceMode="multipleChoice"/>
 
-    <CheckBox
-        android:id="@+id/fastFood"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="200dp"
-        android:text="@string/fast_food_preference"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/colombianFood" />
+    </LinearLayout>
 
-    <CheckBox
-        android:id="@+id/colombianFood"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginBottom="80dp"
-        android:text="@string/Colombian_preference"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/acuarela2abajo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
