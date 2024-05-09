@@ -32,33 +32,19 @@
         app:layout_constraintVertical_bias="1.0"
         app:layout_constraintVertical_weight="0.606" />
 
-    <ImageView
-        android:id="@+id/logoDateVenture"
-        android:layout_width="194dp"
-        android:layout_height="162dp"
-        android:contentDescription="@string/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079"
-        app:srcCompat="@mipmap/logo_launcher_foreground" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="275dp"
         android:layout_height="110dp"
-        android:layout_marginStart="148dp"
         android:text="@string/Travel_preferences"
         android:textAlignment="center"
-        android:textSize="35sp"
         android:textColor="@color/black"
+        android:textSize="35sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -73,53 +59,55 @@
 
     <CheckBox
         android:id="@+id/italiaCountry"
-        android:layout_width="147dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="96dp"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="200dp"
         android:text="@string/italia_check"
         android:textSize="23sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/argentinaCountry" />
 
     <CheckBox
         android:id="@+id/brasilCountry"
-        android:layout_width="208dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="88dp"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="200dp"
         android:text="@string/brasil_check"
         android:textSize="23sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mexicoCountry" />
 
     <CheckBox
         android:id="@+id/mexicoCountry"
-        android:layout_width="226dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="160dp"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/mexico_check"
         android:textSize="23sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/acuarela2abajo" />
 
     <CheckBox
         android:id="@+id/argentinaCountry"
-        android:layout_width="226dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="160dp"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/argentina_check"
         android:textSize="23sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/acuarela2abajo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
