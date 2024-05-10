@@ -52,12 +52,12 @@
 
 
     <string name="food_preferences">FOOD PREFERENCES</string>
-    <string name="brazilian_preference">BRAZILIAN</string>
-    <string name="Colombian_preference">COLOMBIAN</string>
+    <string name="brazilian_preference">Brazilian</string>
+    <string name="Colombian_preference">Colombian</string>
     <string name="image_food">Imagen con hobbies</string>
-    <string name="italian_preference">ITALIAN</string>
-    <string name="fast_food_preference">FAST FOOD</string>
-    <string name="Other_preference">OTHERS</string>
+    <string name="italian_preference">Italian</string>
+    <string name="fast_food_preference">Fast Food</string>
+    <string name="Other_preference">Others</string>
 
     <string name="Travel_preferences">TRAVEL PREFERENCES</string>
     <string name="italia_check">ITALIA</string>

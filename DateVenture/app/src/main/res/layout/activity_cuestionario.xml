@@ -32,19 +32,33 @@
         app:layout_constraintVertical_bias="1.0"
         app:layout_constraintVertical_weight="0.606" />
 
+    <ImageView
+        android:id="@+id/logoDateVenture"
+        android:layout_width="176dp"
+        android:layout_height="155dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@mipmap/logo_launcher_foreground" />
+
     <TextView
         android:id="@+id/describeComoCompletar"
         android:layout_width="252dp"
         android:layout_height="105dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/complete_questions"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/acuarela1arriba" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
 
     <TextView
         android:id="@+id/preguntasSiguientes"
@@ -61,11 +75,11 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="391dp"
-        android:layout_height="37dp"
+        android:layout_width="389dp"
+        android:layout_height="56dp"
         android:text="@string/prefer_date"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/imagenCitas2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,6 +105,7 @@
         android:layout_width="155dp"
         android:layout_height="55dp"
         android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_rounded"
         android:text="@string/btn_restaurants"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,6 +115,7 @@
         android:id="@+id/btnTravel"
         android:layout_width="155dp"
         android:layout_height="55dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="35dp"
         android:background="@drawable/button_rounded"
         android:text="@string/btnTravel"
