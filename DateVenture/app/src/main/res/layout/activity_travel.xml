@@ -19,23 +19,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/acuarela2abajo"
-        android:layout_width="419dp"
-        android:layout_height="231dp"
-        android:contentDescription="@string/imagen_acuarela2"
-        android:src="@drawable/acuarela_dateventure"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/acuarela1arriba"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintVertical_weight="0.606" />
-
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="275dp"
-        android:layout_height="110dp"
+        android:layout_width="304dp"
+        android:layout_height="81dp"
         android:text="@string/Travel_preferences"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -43,71 +30,44 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageMapaCol"
+        android:layout_width="208dp"
+        android:layout_height="170dp"
         android:contentDescription="@string/image_travel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119"
         app:srcCompat="@drawable/mapaviajescolombia" />
 
-    <CheckBox
-        android:id="@+id/italiaCountry"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="200dp"
-        android:text="@string/italia_check"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/argentinaCountry" />
+        app:layout_constraintTop_toBottomOf="@+id/acuarela1arriba">
 
-    <CheckBox
-        android:id="@+id/brasilCountry"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="200dp"
-        android:text="@string/brasil_check"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mexicoCountry" />
+        <ListView
+            android:id="@+id/foodPreferencesListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:choiceMode="multipleChoice"/>
 
-    <CheckBox
-        android:id="@+id/mexicoCountry"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginBottom="80dp"
-        android:text="@string/mexico_check"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/acuarela2abajo" />
+    </LinearLayout>
 
-    <CheckBox
-        android:id="@+id/argentinaCountry"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginBottom="80dp"
-        android:text="@string/argentina_check"
-        android:textSize="23sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/acuarela2abajo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
