@@ -42,9 +42,9 @@
     <string name="hi_welcome">HI, WELCOME</string>
 
     <string name="complete_questions">COMPLETE THE QUESTIONS FOR THE DAY OF YOUR DREAMS</string>
-    <string name="What_hobbies">WHAT ARE YOUR HOBBIES?</string>
+    <string name="What_hobbies">TELL US ABOUT YOURSELF</string>
     <string name="prefer_date">WHAT DO YOU PREFER FOR YOUR DATE?</string>
-    <string name="btn_restaurants">RESTAURANTS</string>
+    <string name="btn_restaurants">FOOD PREFERENCES</string>
     <string name="btnTravel">TRAVEL</string>
     <string name="btn_home">HOME</string>
     <string name="btn_green_spaces">GREEN SPACES</string>

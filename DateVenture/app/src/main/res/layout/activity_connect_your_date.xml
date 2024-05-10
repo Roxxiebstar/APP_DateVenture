@@ -18,33 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/acuarela2abajo"
-        android:layout_width="413dp"
-        android:layout_height="237dp"
-        android:contentDescription="@string/imagen_acuarela2"
-        android:src="@drawable/acuarela_dateventure"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/acuarela1arriba"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintVertical_weight="0.606" />
-
-
-    <ImageView
-        android:id="@+id/logoDateVenture"
-        android:layout_width="168dp"
-        android:layout_height="158dp"
-        android:contentDescription="@string/acuarela"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022"
-        app:srcCompat="@mipmap/logo_launcher_foreground" />
 
     <TextView
         android:id="@+id/textView3"
@@ -58,15 +31,15 @@
         app:layout_constraintBottom_toBottomOf="@+id/acuarela1arriba"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageConnectPareja"
-        android:layout_width="413dp"
-        android:layout_height="433dp"
+        android:layout_width="340dp"
+        android:layout_height="347dp"
+        android:layout_marginBottom="80dp"
         android:contentDescription="@string/icon_conectar_pareja"
-        app:layout_constraintBottom_toBottomOf="@+id/acuarela2abajo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -77,18 +50,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_buscar_username"
+        android:background="@drawable/button_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/putNameDescp"
-        app:layout_constraintVertical_bias="0.735" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
 
     <TextView
         android:id="@+id/putNameDescp"
         android:layout_width="328dp"
         android:layout_height="72dp"
-        android:layout_marginBottom="148dp"
         android:text="@string/text_put"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -97,13 +68,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.946" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/editTextEmailAddress"
         android:layout_width="273dp"
         android:layout_height="61dp"
+        android:layout_marginBottom="80dp"
         android:autofillHints="emailAddress"
         android:ems="20"
         android:hint="@string/write_username"
@@ -112,9 +83,7 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/acuarela2abajo"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintTop_toBottomOf="@+id/putNameDescp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
