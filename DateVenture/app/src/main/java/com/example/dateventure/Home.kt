@@ -21,7 +21,7 @@ class Home : AppCompatActivity() {
             insets
         }
         // Encuentra el ListView en el diseño
-        val listView: ListView = findViewById(R.id.foodPreferencesListView)
+        val listView: ListView = findViewById(R.id.homePreferencesListView)
 
         // Crea una lista de datos
         val items = mutableListOf("TV SHOWS", "CRAFTS", "COOK","GAMES", "MOVIES")
