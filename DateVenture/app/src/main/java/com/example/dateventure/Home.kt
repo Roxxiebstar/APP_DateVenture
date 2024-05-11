@@ -1,7 +1,9 @@
 package com.example.dateventure
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +22,13 @@ class Home : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btnNext: Button = findViewById(R.id.buttonContinue)
+        btnNext.setOnClickListener {
+            val intent = Intent(this, Cuestionario:: class.java)
+            startActivity(intent)
+        }
+
         // Encuentra el ListView en el diseño
         val listView: ListView = findViewById(R.id.homePreferencesListView)
 

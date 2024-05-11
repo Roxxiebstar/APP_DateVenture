@@ -90,4 +90,7 @@
     <string name="successful">SUCCESSFUL CONNECTION!</string>
     <string name="fail">FAILED CONNECTION!</string>
 
+    <string name="Back">BACK</string>
+    <string name="Continue">CONTINUE</string>
+
 </resources>

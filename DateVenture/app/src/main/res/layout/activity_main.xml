@@ -8,6 +8,8 @@
     android:background="@color/arena"
     tools:context=".MainActivity">
 
+
+
     <ImageView
         android:id="@+id/acuarela1arriba"
         android:layout_width="413dp"

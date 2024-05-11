@@ -1,7 +1,9 @@
 package com.example.dateventure
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,12 +22,18 @@ class GreenPlaces : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btnNext: Button = findViewById(R.id.buttonContinue)
+        btnNext.setOnClickListener {
+            val intent = Intent(this, Cuestionario:: class.java)
+            startActivity(intent)
+        }
+
         // Encuentra el ListView en el diseño
         val listView: ListView = findViewById(R.id.greenSpacePreferencesListView)
 
         // Crea una lista de datos
-        val items = mutableListOf("PICNIC EN EL PARQUE", "VISITA A UN JARDÍN BOTÁNICO",
-            "SESIÓN DE DIBUJO AL AIRE LIBRE","PASEO EN BICICLETA POR LA NATURALEZA", "VOLUNTARIADO EN UN HUERTO COMUNITARIO")
+        val items = mutableListOf("Picnic in the Park", "Visit to a Botanical Garden", "Outdoor Drawing Session", "Nature Bike Ride", "Volunteering at a Community Garden")
 
         // Crea el ArrayAdapter
         val adapter = ArrayAdapter(
