@@ -8,36 +8,23 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ConnectYourDate : AppCompatActivity() {
+class PopUpdate : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_connect_your_date)
+        setContentView(R.layout.activity_pop_up_date)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-
-        }
-
-        val btnSignIn: Button = findViewById(R.id.buttonDate)
-        btnSignIn.setOnClickListener {
-            val intent = Intent(this, PopUpdate:: class.java)
-            startActivity(intent)
-        }
+            }
 
         val btnNext: Button = findViewById(R.id.buttonContinue)
         btnNext.setOnClickListener {
-            val intent = Intent(this, MainActivity:: class.java)
+            val intent = Intent(this, ConnectYourDate:: class.java)
             startActivity(intent)
         }
 
-    }
 
-//    mDialog = Dialog(this)
-//    val btnDate: Button = findViewById(R.id.buttonDate)
-//    btnDate.setOnClickListener {
-//        mDialog.setContentView(R.layout.activity_pop_up_date)
-//        mDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-//    }
+    }
 }

@@ -87,5 +87,7 @@
     <string name="text_put">PUT THE USERNAME</string>
     <string name="write_username">search Username</string>
     <string name="btn_buscar_username">search username</string>
+    <string name="successful">SUCCESSFUL CONNECTION!</string>
+    <string name="fail">FAILED CONNECTION!</string>
 
 </resources>

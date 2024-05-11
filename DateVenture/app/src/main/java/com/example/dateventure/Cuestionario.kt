@@ -21,28 +21,34 @@ class Cuestionario : AppCompatActivity() {
 
         val btnRestaurant: Button = findViewById(R.id.btnRestaurants)
         btnRestaurant.setOnClickListener {
-            val intent: Intent = Intent(this, Restaurante:: class.java)
+            val intent = Intent(this, Restaurante:: class.java)
             startActivity(intent)
         }
 
         val btnTravel: Button = findViewById(R.id.btnTravel)
         btnTravel.setOnClickListener {
-            val intent: Intent = Intent(this, Travel:: class.java)
+            val intent = Intent(this, Travel:: class.java)
            //Cambiar "Restaurante" por "Travel"                aqui
             startActivity(intent)
         }
 
         val btnHome: Button = findViewById(R.id.btnHome)
         btnHome.setOnClickListener {
-            val intent: Intent = Intent(this, Home:: class.java)
+            val intent = Intent(this, Home:: class.java)
             //Cambiar "Restaurante" por "Home"                aqui
             startActivity(intent)
         }
 
         val btnGreen: Button = findViewById(R.id.btnGreenPlaces)
         btnGreen.setOnClickListener {
-            val intent: Intent = Intent(this, GreenPlaces:: class.java)
+            val intent = Intent(this, GreenPlaces:: class.java)
             //Cambiar "Restaurante" por "GreenPlaces"                aqui
+            startActivity(intent)
+        }
+
+        val btnNext: Button = findViewById(R.id.buttonContinue)
+        btnNext.setOnClickListener {
+            val intent = Intent(this, MainActivity:: class.java)
             startActivity(intent)
         }
     }
