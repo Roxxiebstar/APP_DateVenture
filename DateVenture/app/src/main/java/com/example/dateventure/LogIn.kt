@@ -24,7 +24,6 @@ class LogIn : AppCompatActivity() {
         val editTextEmailAddress: EditText = findViewById(R.id.editTextEmailAddress)
         val editTextPassword: EditText = findViewById(R.id.editTextPassword)
         val btnLogIn: Button = findViewById(R.id.logIn_button)
-        val btnRegister: Button = findViewById(R.id.register_button)
 
         // Listener para el botón de inicio de sesión
         btnLogIn.setOnClickListener {
@@ -39,27 +38,19 @@ class LogIn : AppCompatActivity() {
                         startActivity(intent)
                     } else {
                         // El inicio de sesión falló, muestra un mensaje de error al usuario
-                        Toast.makeText(this, "Inicio de sesión fallida, registrese", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this,
+                            "Inicio de sesión fallida, registrese",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
         }
 
-        // Listener para el botón de registro
-        btnRegister.setOnClickListener {
-            val email = editTextEmailAddress.text.toString()
-            val password = editTextPassword.text.toString()
-
-            auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        // El usuario se registró exitosamente, redirige al usuario a la actividad principal
-                        val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
-                    } else {
-                        // La creación de la cuenta falló, muestra un mensaje de error al usuario
-                        Toast.makeText(this, "Registro fallido", Toast.LENGTH_SHORT).show()
-                    }
-                }
+        val btnSignIn: Button = findViewById(R.id.register_button)
+        btnSignIn.setOnClickListener {
+            val intent: Intent = Intent(this, SignIn::class.java)
+            startActivity(intent)
         }
     }
 }
