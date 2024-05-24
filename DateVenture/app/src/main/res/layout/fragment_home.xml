@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arena"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <ImageView
+        android:id="@+id/acuarela1arriba"
+        android:layout_width="413dp"
+        android:layout_height="239dp"
+        android:contentDescription="@string/imagen_acuarela"
+        android:src="@drawable/acuarela_dateventure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/acuarela2abajo"
+        android:layout_width="413dp"
+        android:layout_height="235dp"
+        android:contentDescription="@string/imagen_acuarela2"
+        android:src="@drawable/acuarela_dateventure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/acuarela1arriba"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_weight="0.606" />
+
+    <ImageView
+        android:id="@+id/iconPerfil"
+        android:layout_width="90dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconperfil"
+        android:contentDescription="@string/icon_del_perfil" />
+
+
+    <ImageView
+        android:id="@+id/iconParejaUnion"
+        android:layout_width="191dp"
+        android:layout_height="136dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/conectarpareja"
+        android:contentDescription="@string/icon_conectar_pareja"/>
+
+    <ImageView
+        android:id="@+id/logoDateVenture"
+        android:layout_width="154dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/letsadventure"
+        android:contentDescription="@string/logo_de_dateadventure"/>
+
+    <ImageView
+        android:id="@+id/imagesCitas"
+        android:layout_width="335dp"
+        android:layout_height="170dp"
+        android:contentDescription="@string/images_citas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlaneaCita"
+        app:srcCompat="@drawable/imageshobbies" />
+
+    <ImageView
+        android:id="@+id/imagemap"
+        android:layout_width="167dp"
+        android:layout_height="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534"
+        app:srcCompat="@drawable/mapitaicono"
+        android:contentDescription="@string/image_mapa_animado"/>
+
+    <ImageView
+        android:id="@+id/logoDateAdventure"
+        android:layout_width="195dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/logo_de_dateadventure"
+        android:src="@mipmap/logo_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlaneaCita"
+        android:layout_width="269dp"
+        android:layout_height="59dp"
+        android:text="@string/btn_crea_cita"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_rounded"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acuarela1arriba" />
+
+    <Button
+        android:id="@+id/btnConectaPareja"
+        android:layout_width="269dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="232dp"
+        android:text="@string/btn_bond_with_your_partner"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button_rounded"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acuarela1arriba" />
+
+    <TextView
+        android:id="@+id/UsernameNombreUsario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/username"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.624"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="128dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="@string/hi_welcome"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
