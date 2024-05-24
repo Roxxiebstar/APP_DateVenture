@@ -84,9 +84,9 @@
 
     <string name="desc_connect">CONNECT WITH YOUR DATE</string>
     <string name="image_date">Contiene imagen para entrelazar parejas</string>
-    <string name="text_put">PUT THE USERNAME</string>
-    <string name="write_username">search Username</string>
-    <string name="btn_buscar_username">search username</string>
+    <string name="text_put">PUT THE EMAIL</string>
+    <string name="write_email">search email</string>
+    <string name="btn_buscar_email">search email</string>
     <string name="successful">SUCCESSFUL CONNECTION!</string>
     <string name="fail">FAILED CONNECTION!</string>
 
