@@ -87,7 +87,7 @@
     <string name="text_put">PUT THE EMAIL</string>
     <string name="write_email">search email</string>
     <string name="btn_buscar_email">search email</string>
-    <string name="successful">SUCCESSFUL CONNECTION!</string>
+    <string name="successful">CONNECT?</string>
     <string name="fail">FAILED CONNECTION!</string>
 
     <string name="Back">BACK</string>

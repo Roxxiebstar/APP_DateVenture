@@ -23,6 +23,13 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val userName: TextView = findViewById(R.id.UsernameNombreUsario)
+        val email:  String = LogIn.EMAIL_ADDRESS_USER
+
+        db.collection("users").document(email).get().addOnSuccessListener {
+            userName.text= it.get("name") as String?
+        }
+
         val btnPlan: Button = findViewById(R.id.btnPlaneaCita)
         btnPlan.setOnClickListener {
             val intent = Intent(this, Cuestionario:: class.java)

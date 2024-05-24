@@ -14,7 +14,6 @@ import com.google.firebase.firestore.FirebaseFirestore
 class SignIn : AppCompatActivity() {
     private  val db = FirebaseFirestore.getInstance()
     private lateinit var auth: FirebaseAuth
-//    var user: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +25,7 @@ class SignIn : AppCompatActivity() {
 
         val editTextEmailAddress: EditText = findViewById(R.id.editTextEmailAddress)
         val editTextPassword: EditText = findViewById(R.id.editTextPassword)
+        val editTextRePassword: EditText = findViewById(R.id.editTextRePassword)
         val btnRegister: Button = findViewById(R.id.register_button)
         val editTextName: EditText = findViewById(R.id.editTextName)
         val editTextPhone: EditText = findViewById(R.id.editTextPhone)
@@ -34,24 +34,34 @@ class SignIn : AppCompatActivity() {
         btnRegister.setOnClickListener {
             val email = editTextEmailAddress.text.toString()
             val password = editTextPassword.text.toString()
+            val rePassword = editTextRePassword.text.toString()
 
-                    auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        db.collection("users").document(email).set(
-                            hashMapOf("name" to editTextName.text.toString(),
-                                "phone" to editTextPhone.text.toString()
+            if (password == rePassword) {
+                auth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            db.collection("users").document(email).set(
+                                hashMapOf(
+                                    "name" to editTextName.text.toString(),
+                                    "phone" to editTextPhone.text.toString()
 //                                "partner" to editTextEmailAddress.text.toString()
-                                                                )
-                        )
-                        // El usuario se registró exitosamente, redirige al usuario a la actividad principal
-                        val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
-                    } else {
-                        // La creación de la cuenta falló, muestra un mensaje de error al usuario
-                        Toast.makeText(this, "Registro fallido", Toast.LENGTH_SHORT).show()
+                                )
+                            )
+                            Toast.makeText(
+                                this, "Registro exitoso, vuelva a iniciar sesión",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                            // El usuario se registró exitosamente, redirige al usuario a la actividad principal
+                            val intent = Intent(this, LogIn::class.java)
+                            startActivity(intent)
+                        } else {
+                            // La creación de la cuenta falló, muestra un mensaje de error al usuario
+                            Toast.makeText(this, "Registro fallido", Toast.LENGTH_SHORT).show()
+                        }
                     }
-                }
+            } else {
+                Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
+            }
         }
 
         val btn: Button = findViewById(R.id.logIn_button)
