@@ -24,15 +24,8 @@ class ConnectYourDate : AppCompatActivity() {
 
         }
 
-        val editTextEmailAddress: EditText = findViewById(R.id.editTextEmailAddress)
-        val editTextName: EditText = findViewById(R.id.editTextParner)
-
         val btnSignIn: Button = findViewById(R.id.buttonDate)
         btnSignIn.setOnClickListener {
-            val email = editTextEmailAddress.text.toString()
-            db.collection("users").document(email).set(
-                hashMapOf("partner" to editTextName.text.toString())
-            )
 
             val intent = Intent(this, PopUpdate:: class.java)
             startActivity(intent)
