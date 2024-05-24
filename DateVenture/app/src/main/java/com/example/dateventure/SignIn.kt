@@ -40,7 +40,8 @@ class SignIn : AppCompatActivity() {
                     if (task.isSuccessful) {
                         db.collection("users").document(email).set(
                             hashMapOf("name" to editTextName.text.toString(),
-                                "phone" to editTextPhone.text.toString())
+                                "phone" to editTextPhone.text.toString(),
+                                "partner" to editTextEmailAddress.text.toString())
                         )
                         // El usuario se registró exitosamente, redirige al usuario a la actividad principal
                         val intent = Intent(this, MainActivity::class.java)
