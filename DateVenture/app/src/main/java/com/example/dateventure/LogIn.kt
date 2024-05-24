@@ -4,12 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class LogIn : AppCompatActivity() {
+    private  val db = FirebaseFirestore.getInstance()
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +27,7 @@ class LogIn : AppCompatActivity() {
         val editTextEmailAddress: EditText = findViewById(R.id.editTextEmailAddress)
         val editTextPassword: EditText = findViewById(R.id.editTextPassword)
         val btnLogIn: Button = findViewById(R.id.logIn_button)
+
 
         // Listener para el botón de inicio de sesión
         btnLogIn.setOnClickListener {

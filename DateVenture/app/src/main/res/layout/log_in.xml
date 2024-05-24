@@ -8,6 +8,7 @@
     android:background="@color/arena"
     tools:context=".LogIn">
 
+
     <TextView
         android:id="@+id/Adventure_Starts"
         android:layout_width="344dp"
@@ -115,32 +116,23 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/social_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_button"
-        app:srcCompat="@drawable/google_logo"
-        android:background="@drawable/social_button"/>
+        app:srcCompat="@drawable/google_logo" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="32dp"
+        android:background="@drawable/social_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_button"
-        app:srcCompat="@drawable/facebook_logo"
-        android:background="@drawable/social_button"/>
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/register_button"
-        app:srcCompat="@drawable/microsoft_logo"
-        android:background="@drawable/social_button"/>
+        app:srcCompat="@drawable/facebook_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
