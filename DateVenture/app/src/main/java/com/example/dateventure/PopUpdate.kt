@@ -10,12 +10,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.toObject
 
 class PopUpdate : AppCompatActivity() {
     private  val db = FirebaseFirestore.getInstance()
+    val noFound: String = "Correo no resgistrado"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -51,6 +50,8 @@ class PopUpdate : AppCompatActivity() {
                                 startActivity(intent)
                             }
                         } else {
+                            val noFoundEmail: TextView = findViewById(R.id.textDate)
+                            noFoundEmail.text = noFound
                             Toast.makeText(this, "El correo no está registrado", Toast.LENGTH_SHORT).show()
                             val btnNext: Button = findViewById(R.id.buttonContinue)
                             btnNext.setOnClickListener {
