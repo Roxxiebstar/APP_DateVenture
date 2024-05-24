@@ -14,7 +14,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 class SignIn : AppCompatActivity() {
     private  val db = FirebaseFirestore.getInstance()
     private lateinit var auth: FirebaseAuth
-    var user: String = ""
+//    var user: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,7 +56,7 @@ class SignIn : AppCompatActivity() {
 
         val btn: Button = findViewById(R.id.logIn_button)
         btn.setOnClickListener {
-            val intent: Intent = Intent(this, LogIn:: class.java)
+            val intent = Intent(this, LogIn:: class.java)
             startActivity(intent)
         }
     }
