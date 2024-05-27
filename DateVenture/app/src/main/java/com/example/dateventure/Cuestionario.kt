@@ -1,5 +1,6 @@
 package com.example.dateventure
 
+import Restaurante
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -21,7 +22,7 @@ class Cuestionario : AppCompatActivity() {
 
         val btnRestaurant: Button = findViewById(R.id.btnRestaurants)
         btnRestaurant.setOnClickListener {
-            val intent = Intent(this, Restaurante:: class.java)
+            val intent = Intent(this, Restaurante::class.java)
             startActivity(intent)
         }
 
