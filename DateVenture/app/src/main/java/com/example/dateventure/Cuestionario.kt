@@ -1,6 +1,5 @@
 package com.example.dateventure
 
-import Restaurante
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button

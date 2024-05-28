@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/acuarela1arriba">
 
         <ListView
-            android:id="@+id/foodPreferencesListView"
+            android:id="@+id/travelPreferencesListView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:choiceMode="multipleChoice"

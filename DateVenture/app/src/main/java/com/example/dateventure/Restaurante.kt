@@ -1,3 +1,5 @@
+package com.example.dateventure
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -5,8 +7,6 @@ import android.widget.Button
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.dateventure.Cuestionario
-import com.example.dateventure.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -20,6 +20,25 @@ class Restaurante : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_restaurante)
+
+        val btnNext: Button = findViewById(R.id.buttonContinue)
+        btnNext.setOnClickListener {
+            // Obtener las opciones seleccionadas por el usuario
+            val selectedOptions = selectedItems.map { items[it] }
+
+            // Obtener el correo electrónico del usuario actual
+            val email = FirebaseAuth.getInstance().currentUser?.email
+
+            // Verificar que el correo electrónico no sea nulo
+            email?.let {
+                // Guardar las preferencias del usuario
+                guardarPreferenciasUsuario(email, selectedOptions)
+            }
+
+            // Continuar con la lógica para ir a la siguiente actividad, si es necesario
+            val intent = Intent(this, Cuestionario::class.java)
+            startActivity(intent)
+        }
 
         // Encuentra el ListView en el diseño
         listView = findViewById(R.id.foodPreferencesListView)
@@ -55,25 +74,6 @@ class Restaurante : AppCompatActivity() {
                 listView.setItemChecked(position, true)  // Restaurar la selección
                 selectedItems.add(position)
             }
-        }
-
-        val btnNext: Button = findViewById(R.id.buttonContinue)
-        btnNext.setOnClickListener {
-            // Obtener las opciones seleccionadas por el usuario
-            val selectedOptions = selectedItems.map { items[it] }
-
-            // Obtener el correo electrónico del usuario actual
-            val email = FirebaseAuth.getInstance().currentUser?.email
-
-            // Verificar que el correo electrónico no sea nulo
-            email?.let {
-                // Guardar las preferencias del usuario
-                guardarPreferenciasUsuario(email, selectedOptions)
-            }
-
-            // Continuar con la lógica para ir a la siguiente actividad, si es necesario
-            val intent = Intent(this, Cuestionario::class.java)
-            startActivity(intent)
         }
     }
 
