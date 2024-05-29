@@ -43,8 +43,8 @@ class SignIn : AppCompatActivity() {
                             db.collection("users").document(email).set(
                                 hashMapOf(
                                     "name" to editTextName.text.toString(),
-                                    "phone" to editTextPhone.text.toString()
-//                                "partner" to editTextEmailAddress.text.toString()
+                                    "phone" to editTextPhone.text.toString(),
+                                    "password" to password
                                 )
                             )
                             Toast.makeText(

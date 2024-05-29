@@ -25,10 +25,11 @@ class PopUpdate : AppCompatActivity() {
             insets
             }
 
-        val userName: TextView = findViewById(R.id.textViewName)
-        val userEmail: TextView = findViewById(R.id.textViewEmail)
+        val partnerName: TextView = findViewById(R.id.textViewName)
+        val partnerEmail: TextView = findViewById(R.id.textViewEmail)
+        val emailUser:  String = LogIn.EMAIL_ADDRESS_USER
         val emailPartner:  String = ConnectYourDate.EMAIL_ADDRESS_PARTNER
-        userEmail.text = emailPartner
+        partnerEmail.text = emailPartner
 
         if (emailPartner.isNotEmpty()) {
             db.collection("users").document(emailPartner)
@@ -39,12 +40,26 @@ class PopUpdate : AppCompatActivity() {
                         if (document != null && document.exists()) {
                             // Accede a los datos del documento
                             val dato = document.data?.get("name")
-                            userName.text = dato.toString()
+                            partnerName.text = dato.toString()
                             // Haz algo con los datos obtenidos
                             Log.d("Firestore", "Dato obtenido: $dato")
 
                             val btnNext: Button = findViewById(R.id.buttonContinue)
                             btnNext.setOnClickListener {
+                                val updateData = mapOf("partner_solicitud" to emailPartner)
+                                db.collection("users").document(emailUser)
+                                    .update(updateData)
+                                    .addOnSuccessListener {
+                                        Log.d("Firestore", "Campo 'partner_solicitud' actualizado correctamente")
+//                                        val fcmToken = document.data?.get("fcmToken") as String?
+//                                        fcmToken?.let {
+//                                            sendNotification(it, "Nueva Solicitud", "Has recibido una solicitud de $emailUser")
+//                                        }
+                                    }
+                                    .addOnFailureListener { e ->
+                                        Log.e("Firestore", "Error al actualizar campo 'partner_solicitud'", e)
+                                    }
+
                                 Toast.makeText(this, "Solicitud Enviada", Toast.LENGTH_SHORT).show()
                                 val intent = Intent(this, ConnectYourDate:: class.java)
                                 startActivity(intent)

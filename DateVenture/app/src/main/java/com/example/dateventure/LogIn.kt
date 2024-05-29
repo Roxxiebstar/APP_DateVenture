@@ -10,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.messaging.FirebaseMessaging
 
 class LogIn : AppCompatActivity() {
     private  val db = FirebaseFirestore.getInstance()
@@ -38,6 +39,16 @@ class LogIn : AppCompatActivity() {
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
                             EMAIL_ADDRESS_USER = email
+
+                            FirebaseMessaging.getInstance().token.addOnCompleteListener { task ->
+                                if (task.isSuccessful) {
+                                    val token = task.result
+                                    val userRef = db.collection("users").document(email)
+                                    userRef.update("fcmToken", token)
+                                    Log.e("Firestore", "token del usuario: ${token}")
+                                }
+                            }
+
                             // El inicio de sesión fue exitoso, redirige al usuario a la actividad principal
                             val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)
