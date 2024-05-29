@@ -21,7 +21,7 @@ class Cuestionario : AppCompatActivity() {
 
         val btnRestaurant: Button = findViewById(R.id.btnRestaurants)
         btnRestaurant.setOnClickListener {
-            val intent = Intent(this, Restaurante:: class.java)
+            val intent = Intent(this, Restaurante::class.java)
             startActivity(intent)
         }
 

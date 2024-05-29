@@ -7,33 +7,44 @@ import android.widget.Button
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class Travel : AppCompatActivity() {
     private val selectedItems = mutableSetOf<Int>()
     private lateinit var listView: ListView
+    private val db = FirebaseFirestore.getInstance()
+    private lateinit var items: MutableList<String> // Definir items en el alcance de la clase
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_travel)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
         val btnNext: Button = findViewById(R.id.buttonContinue)
         btnNext.setOnClickListener {
-            val intent = Intent(this, Cuestionario:: class.java)
+            // Obtener las opciones seleccionadas por el usuario
+            val selectedOptions = selectedItems.map { items[it] }
+
+            // Obtener el correo electrónico del usuario actual
+            val email = FirebaseAuth.getInstance().currentUser?.email
+
+            // Verificar que el correo electrónico no sea nulo
+            email?.let {
+                // Guardar las preferencias del usuario
+                guardarPreferenciasUsuario(email, selectedOptions)
+            }
+
+            // Continuar con la lógica para ir a la siguiente actividaad
+            val intent = Intent(this, Cuestionario::class.java)
             startActivity(intent)
         }
 
-// Encuentra el ListView en el diseño
-        val listView: ListView = findViewById(R.id.foodPreferencesListView)
+        // Encuentra el ListView en el diseño
+        listView = findViewById(R.id.travelPreferencesListView)
 
         // Crea una lista de datos
-        val items = mutableListOf("MEDELLIN", "CALI", "SANTA MARTA","BOGOTÁ", "BUCARAMANGA")
+        items = mutableListOf("MEDELLIN", "CALI", "BOGOTÁ", "BICARAMANGA", "SANTA MARTA")
 
         // Crea el ArrayAdapter
         val adapter = ArrayAdapter(
@@ -55,6 +66,15 @@ class Travel : AppCompatActivity() {
                 selectedItems.add(position)  // Seleccionar
             }
         }
+
+        // Restaurar las selecciones previas del usuario si existen
+        savedInstanceState?.let {
+            val restoredItems = it.getIntegerArrayList("selectedItems")
+            restoredItems?.forEach { position ->
+                listView.setItemChecked(position, true)  // Restaurar la selección
+                selectedItems.add(position)
+            }
+        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -62,12 +82,37 @@ class Travel : AppCompatActivity() {
         outState.putIntegerArrayList("selectedItems", ArrayList(selectedItems))
     }
 
-    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        super.onRestoreInstanceState(savedInstanceState)
-        val restoredItems = savedInstanceState.getIntegerArrayList("selectedItems")
-        restoredItems?.forEach { position ->
-            listView.setItemChecked(position, true)  // Restaura la selección
-            selectedItems.add(position)
+    // Función para guardar las preferencias del usuario en Firestore
+    private fun guardarPreferenciasUsuario(email: String, preferenciasTravel: List<String>) {
+        // Referencia al documento del usuario en Firestore
+        val referenciaUsuario = db.collection("users").document(email)
+
+        // Obtener las preferencias de comida del usuario si ya existen en el documento
+        referenciaUsuario.get().addOnSuccessListener { document ->
+            if (document.exists()) {
+                val preferencias = document["preferencias"] as? Map<String, Any>
+                val preferenciasFood = preferencias?.get("preferenciasFood") as? List<String>
+                if (preferenciasFood != null) {
+                    // Combinar las preferencias de comida y de viaje en un solo mapa
+                    val preferenciasActualizadas = hashMapOf(
+                        "preferencias" to hashMapOf(
+                            "preferenciasFood" to preferenciasFood,
+                            "preferenciasTravel" to preferenciasTravel
+                        )
+                    )
+
+                    // Actualizar el documento del usuario con las preferencias combinadas
+                    referenciaUsuario.update(preferenciasActualizadas as Map<String, Any>)
+                        .addOnSuccessListener {
+                            // La información se ha guardado exitosamente en Firestore
+                        }
+                        .addOnFailureListener { e ->
+                            // Ocurrió un error al intentar guardar la información en Firestore
+                        }
+                }
+            }
+        }.addOnFailureListener { e ->
+            // Ocurrió un error al intentar obtener el documento del usuario
         }
     }
 }
