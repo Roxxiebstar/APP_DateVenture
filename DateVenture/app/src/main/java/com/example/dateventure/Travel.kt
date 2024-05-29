@@ -35,7 +35,7 @@ class Travel : AppCompatActivity() {
                 guardarPreferenciasUsuario(email, selectedOptions)
             }
 
-            // Continuar con la lógica para ir a la siguiente actividad, si es necesario
+            // Continuar con la lógica para ir a la siguiente actividaad
             val intent = Intent(this, Cuestionario::class.java)
             startActivity(intent)
         }
