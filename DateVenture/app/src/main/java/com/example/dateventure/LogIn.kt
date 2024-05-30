@@ -35,11 +35,14 @@ class LogIn : AppCompatActivity() {
             val password = editTextPassword.text.toString()
 
             if (email.isNotEmpty() && password.isNotEmpty()){
+                //función devuelve un objeto Task<AuthResult>, que representa la operación de inicio de sesión.
                 auth.signInWithEmailAndPassword(email, password)
+                    //agregar un "listener" a una tarea, en este caso, la tarea de inicio de sesión
                     .addOnCompleteListener(this) { task ->
+                        // definir qué acciones deben realizarse cuando la operación se complete.
                         if (task.isSuccessful) {
                             EMAIL_ADDRESS_USER = email
-
+//obtiene el token de registro de Firebase Cloud Messaging (FCM) del dispositivo del usuario actual.
                             FirebaseMessaging.getInstance().token.addOnCompleteListener { task ->
                                 if (task.isSuccessful) {
                                     val token = task.result
