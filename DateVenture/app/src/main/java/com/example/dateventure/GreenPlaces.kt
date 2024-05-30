@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -18,7 +17,6 @@ class GreenPlaces : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_green_places)
 
         val btnNext: Button = findViewById(R.id.buttonContinue)
@@ -44,7 +42,7 @@ class GreenPlaces : AppCompatActivity() {
         listView = findViewById(R.id.greenSpacePreferencesListView)
 
         // Crea una lista de datos
-        items = mutableListOf("Pinic in the Park", "Visit to a Botanical Garden", "Outdoor Drawing Session", "Nature Bike Ride", "Volunteering at a Community Garden")
+        items = mutableListOf("Picnic in the Park", "Visit to a Botanical Garden", "Outdoor Drawing Session", "Nature Bike Ride", "Volunteering at a Community Garden")
 
         // Crea el ArrayAdapter
         val adapter = ArrayAdapter(
@@ -94,6 +92,7 @@ class GreenPlaces : AppCompatActivity() {
                 val preferenciasFood = preferencias?.get("preferenciasFood") as? List<String>
                 val preferenciasTravel = preferencias?.get("preferenciasTravel") as? List<String>
                 val preferenciasHome = preferencias?.get("preferenciasHome") as? List<String>
+                val preferenciasGreenPlacesExistentes = preferencias?.get("preferenciasGreenPlaces") as? List<String>
 
                 // Combinar las preferencias existentes con las nuevas de greenPlaces
                 val preferenciasActualizadas = hashMapOf(
@@ -101,7 +100,7 @@ class GreenPlaces : AppCompatActivity() {
                         "preferenciasFood" to (preferenciasFood ?: listOf()),
                         "preferenciasTravel" to (preferenciasTravel ?: listOf()),
                         "preferenciasHome" to (preferenciasHome ?: listOf()),
-                        "preferenciasHome" to preferencesGreenPlaces
+                        "preferenciasGreenPlaces" to (preferenciasGreenPlacesExistentes.orEmpty() + preferencesGreenPlaces)
                     )
                 )
 
