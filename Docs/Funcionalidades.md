@@ -7,8 +7,8 @@
 ## Funcionalidades del Usuario
 El usuario podrá:
 
-1. Permite a las parejas crear perfiles individuales y vincularse como pareja en la aplicación. 
+1. Permite a las parejas crear perfiles individuales y realizar solicitudes hacia otros usuarios. 
 
-2. Permite responder o seleccionar  respuestas a preguntas divertidas y creativas para entender mejor sus intereses, gustos y preferencias. 
+2. Permite responder o seleccionar respuestas a preguntas divertidas y creativas para entender mejor sus intereses, gustos y preferencias. 
 
 3. Permite personalizar las recomendaciones de citas.
