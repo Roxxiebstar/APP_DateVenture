@@ -4,7 +4,7 @@ a los de una aplicacion de planificación de citas.
 
 Logo DateVenture :
 
-<img src="Images/LogoDateVenture.png" alt="LogoDateVenture" width="110" />
+<img src="Images/LogoDateVenture.png" alt="LogoDateVenture" width="200" />
 
 ## Principales  
 Permite a las parejas crear perfiles individuales y vincularse como pareja en la aplicación. Esto ayudará a personalizar las recomendaciones según los intereses y presupuestos compartidos.
